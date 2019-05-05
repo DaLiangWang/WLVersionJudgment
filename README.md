@@ -6,15 +6,15 @@ NSString *min = @"2.8.0";
     NSString *tishi = @"3.00.0.3";
 
     if (min.contrastVersion) {
-//        NSLog(@"需要更新");
+        NSLog(@"需要更新");
     }
     
     [NSString minVersion:min promptVersion:tishi normalBlock:^(NSString * _Nonnull version) {
-//        NSLog(@"不提示更新");
+        NSLog(@"不提示更新");
     } hotBlock:^(NSString * _Nonnull version) {
-//        NSLog(@"re更新");
+        NSLog(@"re更新");
     } promptBlock:^(NSString * _Nonnull version) {
-//        NSLog(@"提示更新");
+        NSLog(@"提示更新");
     } mandatoryBlock:^(NSString * _Nonnull version) {
-//        NSLog(@"强制更新");
+        NSLog(@"强制更新");
     }];
