@@ -2,9 +2,8 @@
 版本更新对比分类
 使用方法
 
-NSString *min = @"2.8.0";
+    NSString *min = @"2.8.0";
     NSString *tishi = @"3.00.0.3";
-
     if (min.contrastVersion) {
         NSLog(@"需要更新");
     }
